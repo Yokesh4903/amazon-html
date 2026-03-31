@@ -73,8 +73,10 @@
                     alert("fill all the details")
             
                 }
-                eleseif (pass == cpass){
+                else if (pass != cpass){
                     alert ("Password is not matching")
+                }else if ( num.length != 10 ){
+                    alert("Nmber should be in 10 digits")
                 }
                 else{
                     localStorage.setItem("email" , mail)
